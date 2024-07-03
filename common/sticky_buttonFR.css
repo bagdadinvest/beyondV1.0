@@ -1,0 +1,30 @@
+/* common/sticky_button.css */
+.sticky-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    /* Change to align the button to the left */
+    z-index: 1000;
+}
+
+.sticky-button .button {
+    background-image: url('img/FR.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    min-width: 55px;
+    min-height: 55px;
+    border: groove;
+    display: block;
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+    text-indent: -9999px;
+
+    /* Hide text, if any */
+}
+
+.sticky-button .button:hover {
+    opacity: 1;
+}

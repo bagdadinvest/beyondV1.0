@@ -1,0 +1,74 @@
+           <link rel="stylesheet" type="text/css" href="../common/sticky_buttonEN.css">
+
+   
+        <script>
+// Function to update the href of the sticky button link
+function updateStickyButtonLink() {
+    // Get the current page URL
+    var currentUrl = window.location.pathname;
+
+    // Extract the directory and filename
+    var pathParts = currentUrl.split('/');
+    var filename = pathParts.pop();
+    var directory = pathParts.join('/');
+
+    // Create the new filename by removing "FR" before the extension if it exists
+    var newFilename = filename.replace(/FR(\.[\w\d_-]+)$/i, '$1');
+
+    // Construct the new URL (adjust the relative path)
+    var newUrl = directory + '/' + newFilename;
+
+    // Update the href attribute of the sticky button link
+    var stickyButtonLink = document.getElementById('sticky-button-link');
+    if (stickyButtonLink) {
+        stickyButtonLink.href = newUrl;
+    }
+}
+
+// Fetch and insert the sticky button HTML, then update the link
+fetch('../common/sticky_button.html')
+    .then(response => response.text())
+    .then(data => {
+        const div = document.createElement('div');
+        div.innerHTML = data;
+        document.body.appendChild(div);
+        updateStickyButtonLink(); // Update the link after inserting the HTML
+    });
+</script>     
+
+        <link rel="stylesheet" type="text/css" href="../common/sticky_buttonFR.css">
+
+  <script>
+        // Function to update the href of the sticky button link
+        function updateStickyButtonLink() {
+            // Get the current page URL
+            var currentUrl = window.location.pathname;
+
+            // Extract the directory and filename
+            var pathParts = currentUrl.split('/');
+            var filename = pathParts.pop();
+            var directory = pathParts.join('/');
+
+            // Create the new filename with "FR" added before the extension
+            var newFilename = filename.replace(/(\.[\w\d_-]+)$/i, 'FR$1');
+
+            // Construct the new URL (adjust the relative path)
+            var newUrl = directory + '/' + newFilename;
+
+            // Update the href attribute of the sticky button link
+            var stickyButtonLink = document.getElementById('sticky-button-link');
+            if (stickyButtonLink) {
+                stickyButtonLink.href = newUrl;
+            }
+        }
+
+        // Fetch and insert the sticky button HTML, then update the link
+        fetch('../common/sticky_button.html')
+            .then(response => response.text())
+            .then(data => {
+                const div = document.createElement('div');
+                div.innerHTML = data;
+                document.body.appendChild(div);
+                updateStickyButtonLink(); // Update the link after inserting the HTML
+            });
+        </script>

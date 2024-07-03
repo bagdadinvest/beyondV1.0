@@ -1,0 +1,27 @@
+/* common/sticky_button.css */
+.sticky-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.sticky-button .button {
+    background-image: url('img/2560px-Flag_of_France.svg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    min-width: 65px;
+    min-height: 65px;
+    border: none;
+    display: block;
+    opacity: 0.4;
+    transition: opacity 0.4s ease;
+    text-indent: -9999px; /* Hide text, if any */
+}
+
+.sticky-button .button:hover {
+    opacity: 1;
+}
