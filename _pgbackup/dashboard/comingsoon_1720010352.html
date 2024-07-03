@@ -9,15 +9,13 @@
         <!-- CSS FILES -->         
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="../../../../Desktop/mainproject/111111111111111ready/xx3/css/theme.css" rel="stylesheet" type="text/css">
-        <link href="../../css/theme.css" rel="stylesheet" type="text/css">
         <link href="../../css/theme.css" rel="stylesheet" type="text/css">
         <link href="../css/theme.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet"> 
         <link href="css/bootstrap.min.css" rel="stylesheet"> 
         <link href="css/bootstrap-icons.css" rel="stylesheet"> 
         <link href="css/tooplate-kool-form-pack.css" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="../common/sticky_buttonEN.css">
+        <link rel="stylesheet" type="text/css" href="../common/sticky_buttonFR.css">
         <!--
 
 Tooplate 2136 Kool Form Pack
@@ -93,21 +91,22 @@ Bootstrap 5 Form Pack Template
             <section class="hero-section d-flex justify-content-center align-items-center" id="section_1"> 
                 <div class="container"> 
                     <div class="row"> 
-                        <div class="col-lg-6 col-12 mx-auto"> <small>notre site web est en construction. <a rel="nofollow" target="_blank" href="https://www.pexels.com/video/digital-projection-of-the-earth-mass-in-blue-lights-3129957/">Vidéo de la Terre par Pexels</a></small> 
-                            <!-- veuillez définir la date et l'heure dans le fichier init.js -->                             
-                            <h1 class="text-white mt-2 mb-4 pb-2">  Restez à l'écoute! </h1> 
+                        <div class="col-lg-6 col-12 mx-auto"> <small>our website is under construction.  <a rel="nofollow" target="_blank" href="https://www.pexels.com/video/digital-projection-of-the-earth-mass-in-blue-lights-3129957/">Earth video by Pexels</a></small> 
+                            <!-- please set the date time in the init.js file -->                             
+                            <h1 class="text-white mt-2 mb-4 pb-2"> 
+                                Stay tuned! </h1> 
                             <ul class="countdown d-flex flex-wrap align-items-center"> 
                                 <li class="countdown-item d-flex flex-column justify-content-center align-items-center"> 
-                                    <h2 class="countdown-title days">14</h2> <span class="countdown-text">Jours</span> 
+                                    <h2 class="countdown-title days">14</h2> <span class="countdown-text">Days</span> 
                                 </li>                                 
                                 <li class="countdown-item d-flex flex-column justify-content-center align-items-center"> 
-                                    <h2 class="countdown-title hours">10</h2> <span class="countdown-text">Heures</span> 
+                                    <h2 class="countdown-title hours">10</h2> <span class="countdown-text">Hours</span> 
                                 </li>                                 
                                 <li class="countdown-item d-flex flex-column justify-content-center align-items-center"> 
                                     <h2 class="countdown-title minutes">15</h2> <span class="countdown-text">Minutes</span> 
                                 </li>                                 
                                 <li class="countdown-item d-flex flex-column justify-content-center align-items-center"> 
-                                    <h2 class "countdown-title seconds">34</h2> <span class="countdown-text">Secondes</span> 
+                                    <h2 class="countdown-title seconds">34</h2> <span class="countdown-text">Seconds</span> 
                                 </li>                                 
                             </ul>                             
                         </div>                         
@@ -126,41 +125,6 @@ Bootstrap 5 Form Pack Template
         <script src="js/bootstrap.bundle.min.js"></script>         
         <script src="js/countdown.js"></script>         
         <script src="js/init.js"></script>         
-        <script>
-// Function to update the href of the sticky button link
-function updateStickyButtonLink() {
-    // Get the current page URL
-    var currentUrl = window.location.pathname;
-
-    // Extract the directory and filename
-    var pathParts = currentUrl.split('/');
-    var filename = pathParts.pop();
-    var directory = pathParts.join('/');
-
-    // Create the new filename by removing "FR" before the extension if it exists
-    var newFilename = filename.replace(/FR(\.[\w\d_-]+)$/i, '$1');
-
-    // Construct the new URL (adjust the relative path)
-    var newUrl = directory + '/' + newFilename;
-
-    // Update the href attribute of the sticky button link
-    var stickyButtonLink = document.getElementById('sticky-button-link');
-    if (stickyButtonLink) {
-        stickyButtonLink.href = newUrl;
-    }
-}
-
-// Fetch and insert the sticky button HTML, then update the link
-fetch('../common/sticky_button.html')
-    .then(response => response.text())
-    .then(data => {
-        const div = document.createElement('div');
-        div.innerHTML = data;
-        document.body.appendChild(div);
-        updateStickyButtonLink(); // Update the link after inserting the HTML
-    });
-</script>         
-        <link rel="stylesheet" type="text/css" href="../common/sticky_buttonFR.css">
         <script>
         // Function to update the href of the sticky button link
         function updateStickyButtonLink() {
@@ -194,6 +158,6 @@ fetch('../common/sticky_button.html')
                 document.body.appendChild(div);
                 updateStickyButtonLink(); // Update the link after inserting the HTML
             });
-        </script>
+        </script>         
     </body>     
 </html>
