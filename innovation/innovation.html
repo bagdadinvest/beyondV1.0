@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>On-Scroll Image Layout Animations | Codrops</title>
+        <title>innovation</title>
         <meta name="description" content="An exploration of different scroll based layout switch animations."/>
         <meta name="keywords" content=""/>
         <meta name="author" content="Codrops"/>
         <link rel="shortcut icon" href="favicon.ico">
-        <link href="../../../../Desktop/mainproject/111111111111111ready/xx3/css/theme.css" rel="stylesheet" type="text/css">
         <link href="../css/theme.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="css/base.css"/>
         <link rel="stylesheet" type="text/css" href="../common/sticky_buttonFR.css">
+        <link rel="stylesheet" type="text/css" href="../commonmenu/sticky_menu.css">
         <!-- Added line -->
         <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
         <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
@@ -20,7 +20,7 @@
         <main>
             <div class="frame">
                 <div class="frame__title"> 
-                    <h1 class="frame__title-main">On-Scroll Image Layout Animations</h1> <a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=72941"> <span class="oh__inner">Back to the article</span> <svg width="18px" height="18px" viewBox="0 0 24 24">
+                    <h1 class="frame__title-main">innovation</h1> <a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=72941"> <span class="oh__inner">Back to the article</span> <svg width="18px" height="18px" viewBox="0 0 24 24">
                             <path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
                         </svg> </a>
                 </div><a class="codrops-icon codrops-icon-drop" href="../00home/home2.html"><a class="codrops-icon codrops-icon-drop" href="../01home/home.html"><span>Back to Home Page</span></a></a>
@@ -309,5 +309,15 @@
         <script src="js/lenis.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script type="module" src="js/index.js"></script>
+        <div class="sticky-menu"><a id="sticky-menu-link" href="your-link-here" class="button"></a>
+        </div>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const linkElement = document.getElementById('sticky-menu-link');
+        const currentPage = window.location.pathname;
+        const targetLink = currentPage.endsWith('FR.html') ? '../00menu/indexFR.html' : '../00menu/index.html';
+        linkElement.href = targetLink;
+    });
+</script>
     </body>
 </html>

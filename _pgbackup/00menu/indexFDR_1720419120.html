@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Image Tiles Menu Animation | Codrops</title>
+        <meta name="description" content="An animation featuring image tiles that transform into a full image when a menu item is clicked.">
+        <meta name="keywords" content="animation, menu, image, gsap, page transition">
+        <meta name="author" content="Codrops">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="../../111111111111111ready/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../../css/theme.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.typekit.net/gmc0vlm.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" href="css/splitting.css"/>
+        <link rel="stylesheet" href="css/splitting-cells.css"/>
+        <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    </head>
+    <body class="demo-1 loading">
+        <main>
+            <div class="frame">
+                <div class="frame__title">
+                    <h1 class="frame__title-main">Animation de Menu Tuiles d'Image</h1>
+                    <a aria-label="Retour à l'article" class="frame__title-back" href="https://tympanus.net/codrops/?p=71727"> <span class="oh__inner">Retour à l'article</span> <svg width="18px" height="18px" viewBox="0 0 24 24" xmlns version xml:space fill stroke> 
+                            <path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>                             
+                        </svg> </a>
+                </div>
+            </div>
+            <div class="thumbgrid-wrap">
+                <div class="thumbgrid">
+                    <div class="thumbgrid__item pos-1">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1685808155214-d968eb3a8493?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE3fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-2">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1686943975152-b959f5f562a6?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE4fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-3">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1560011316-77f3185ec566?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDd8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-4"><a href="../01home/homeFR.html"> <div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div></a>
+                    </div>
+                </div>
+                <div class="thumbgrid">
+                    <div class="thumbgrid__item pos-5">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1602922960044-d48ce791d3c0?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDN8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-6">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1622977266039-dbb162254c12?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDZ8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-7">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1685651523477-7a67c62d00b0?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE1fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-8"><a href="../02blogashome/index.html"> <div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div></a>
+                    </div>
+                </div>
+                <div class="thumbgrid">
+                    <div class="thumbgrid__item pos-9">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1496458590512-56d2688442b1?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE5fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-10">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1687800158161-bcd792c0f767?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE2fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-11">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-12"><a href="../03dentalslides/dentaslanFR.html"> <div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div></a>
+                    </div>
+                </div>
+                <div class="thumbgrid">
+                    <div class="thumbgrid__item pos-13">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1513818433747-5f175a60caee?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDV8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-14">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1686597219849-80f5a3d56af9?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE0fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-15">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1642427749670-f20e2e76ed8c?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDExfHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-16"><a href="../innovation/innovation.html"> <div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div></a>
+                    </div>
+                </div>
+                <div class="thumbgrid">
+                    <div class="thumbgrid__item pos-17">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1622977265144-83e92cf7679a?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDh8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-18">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1560011316-90b2677df5d9?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEwfHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-19">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1526900913101-88c16676ca02?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDR8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-20"><a href="../02blogs/whyturkeyFR.html"> <div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div></a>
+                    </div>
+                </div>
+                <div class="thumbgrid">
+                    <div class="thumbgrid__item pos-21">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1688386210635-40b5aeeaf82c?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI5fHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-22">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1689789939394-1bba4d5ebf6c?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDIxfHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-23">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1689598797204-c584f52a5ad8?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDMwfHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-24"><a href="../02blogs/whybeyondFR.html"> <div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div></a>
+                    </div>
+                </div>
+                <div class="thumbgrid">
+                    <div class="thumbgrid__item pos-25">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1693056608200-b64f636f2cd8?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI3fHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-26">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1685364461068-22263cd7478e?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDIyfHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-27">
+                        <div class="thumbgrid__item-img" style="background-image:url('https://images.unsplash.com/photo-1685980027180-eba21bcf6372?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI0fHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                    </div>
+                    <div class="thumbgrid__item pos-28"><a href="../dashboard/contactFR.html"> <div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrap">
+                <div class="content">
+                    <button class="content__back unbutton">&larr; retour</button>
+                    <h2 class="content__title"><i>H</i>ome <i>P</i>age</h2>
+                    <p class="content__desc">Bienvenue sur notre site web ! Explorez nos services, découvrez nos fonctionnalités et commencez votre voyage avec nous.</p>
+                    <div class="content__images">
+                        <div class="thumb thumb--prev">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1688198911740-77dde4d0c5d6?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDIzfHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                        <div class="thumbgrid"> 
+                            <!-- menu images get flipped over here-->                             
+                        </div>
+                        <div class="thumb thumb--next">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1690029627148-80d3ed0565df?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI2fHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="content__back unbutton">&larr; retour</button>
+                    <h2 class="content__title"><i>B</i>lo<i>G</i>s</h2>
+                    <p class="content__desc">Lisez nos derniers articles, idées et mises à jour sur divers sujets pour rester informé et inspiré.</p>
+                    <div class="content__images">
+                        <div class="thumb thumb--prev">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1687036806155-99c182042c3c?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDMxfHxpbWclMkZ8ZW58MHx8fHwxNzIwNDEyOTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                        <div class="thumbgrid"></div>
+                        <div class="thumb thumb--next">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1642427749670-f20e2e76ed8c?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDExfHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="content__back unbutton">&larr; retour</button>
+                    <h2 class="content__title"><i>D</i>en<i>Ta</i>sLAN</h2>
+                    <p class="content__desc">Notre partenaire de confiance pour des services dentaires complets, offrant des traitements avancés et des soins personnalisés pour un sourire sain.</p>
+                    <div class="content__images">
+                        <div class="thumb thumb--prev">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1622977265144-83e92cf7679a?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDh8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                        <div class="thumbgrid"></div>
+                        <div class="thumb thumb--next">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1526900913101-88c16676ca02?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDR8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="content__back unbutton">&larr; retour</button>
+                    <h2 class="content__title"><i>I</i>nnov<i>A</i>tions</h2>
+                    <p class="content__desc">Découvrez nos dernières innovations dans les services de tourisme médical, offrant des solutions de pointe et des soins personnalisés pour une expérience patient exceptionnelle.</p>
+                    <div class="content__images">
+                        <div class="thumb thumb--prev">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1686597219849-80f5a3d56af9?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE0fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                        <div class="thumbgrid"></div>
+                        <div class="thumb thumb--next">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1496458590512-56d2688442b1?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE5fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="content__back unbutton">&larr; retour</button>
+                    <h2 class="content__title"><i>P</i>ourquoi <i>T</i>urqu<i>I</i>e ?</h2>
+                    <p class="content__desc">Découvrez pourquoi la Turquie est une destination de choix pour le tourisme médical, des installations de santé de classe mondiale à la richesse culturelle et à l'hospitalité.</p>
+                    <div class="content__images">
+                        <div class="thumb thumb--prev">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1685808155214-d968eb3a8493?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE3fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                        <div class="thumbgrid"></div>
+                        <div class="thumb thumb--next">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1513818433747-5f175a60caee?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDV8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="content__back unbutton">&larr; retour</button>
+                    <h2 class="content__title"><i>P</i>ourquoi <i>B</i>eyond</h2>
+                    <p class="content__desc">Découvrez pourquoi Beyond Clinic est le meilleur choix pour le tourisme médical, offrant des services de santé de premier ordre, des plans de traitement personnalisés et des soins exceptionnels aux patients.</p>
+                    <div class="content__images">
+                        <div class="thumb thumb--prev">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1685530043068-2862560b8444?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                        <div class="thumbgrid"></div>
+                        <div class="thumb thumb--next">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1687800158161-bcd792c0f767?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE2fHxpbWclMkZ8ZW58MHx8fHwxNzIwMzk3MDQ4fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="content__back unbutton">&larr; retour</button>
+                    <h2 class="content__title"><i>C</i>ontact <i>N</i>ous</h2>
+                    <p class="content__desc">Contactez-nous pour des demandes de renseignements, des rendez-vous et du support. Nous sommes là pour vous aider avec tous vos besoins en matière de tourisme médical.</p>
+                    <div class="content__images">
+                        <div class="thumb thumb--prev">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1622977265115-cce36eb43f18?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDl8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                        <div class="thumbgrid"></div>
+                        <div class="thumb thumb--next">
+                            <div class="thumb__inner" style="background-image:url('https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGltZyUyRnxlbnwwfHx8fDE3MjAzOTcwNDh8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=800&fit=crop');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="menu">
+                <a class="menu__item"> <span class="menu__item-title"><i>H</i>ome <i>P</i>age</span> <span class="menu__item-desc">Bienvenue sur notre site web ! Explorez nos services, découvrez nos fonctionnalités et commencez votre voyage avec nous.</span> </a>
+                <a class="menu__item"> <span class="menu__item-title"><i>B</i>lo<i>G</i>s</span> <span class="menu__item-desc">Lisez nos derniers articles, idées et mises à jour sur divers sujets pour rester informé et inspiré.</span> </a>
+                <a class="menu__item"> <span class="menu__item-title"><i>D</i>en<i>Ta</i>sLAN</span> <span class="menu__item-desc">Notre partenaire de confiance pour des services dentaires complets, offrant des traitements avancés et des soins personnalisés pour un sourire sain.</span> </a>
+                <a class="menu__item"> <span class="menu__item-title"><i>I</i>nnov<i>A</i>tions</span> <span class="menu__item-desc">Découvrez nos dernières innovations dans les services de tourisme médical, offrant des solutions de pointe et des soins personnalisés pour une expérience patient exceptionnelle.</span> </a>
+                <a class="menu__item"> <span class="menu__item-title"><i>P</i>ourquoi <i>T</i>urqu<i>I</i>e ?</span> <span class="menu__item-desc">Découvrez pourquoi la Turquie est une destination de choix pour le tourisme médical, des installations de santé de classe mondiale à la richesse culturelle et à l'hospitalité.</span> </a>
+                <a class="menu__item"> <span class="menu__item-title"><i>P</i>ourquoi <i>B</i>eyond <i>C</i>linic</span> <span class="menu__item-desc">Découvrez pourquoi Beyond Clinic est le meilleur choix pour le tourisme médical, offrant des services de santé de premier ordre, des plans de traitement personnalisés et des soins exceptionnels aux patients.</span> </a>
+                <a class="menu__item"> <span class="menu__item-title"><i>C</i>ontact <i>N</i>ous</span> <span class="menu__item-desc">Contactez-nous pour des demandes de renseignements, des rendez-vous et du support. Nous sommes là pour vous aider avec tous vos besoins en matière de tourisme médical.</span> </a>
+            </nav>
+        </main>
+        <script src="js/gsap.min.js"></script>
+        <script src="js/Flip.min.js"></script>
+        <script src="js/splitting.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>

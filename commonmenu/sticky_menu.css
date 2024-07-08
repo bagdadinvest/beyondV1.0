@@ -1,0 +1,30 @@
+/* common/sticky_button.css */
+.sticky-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    /* Change to align the button to the left */
+    z-index: 1000;
+}
+
+.sticky-menu .button {
+    background-image: url('img/menu.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    min-width: 55px;
+    min-height: 55px;
+    border: groove;
+    display: block;
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+    text-indent: -9999px;
+
+    /* Hide text, if any */
+}
+
+.sticky-menu .button:hover {
+    opacity: 1;
+}

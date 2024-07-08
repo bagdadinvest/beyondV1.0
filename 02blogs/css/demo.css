@@ -16,7 +16,7 @@
 *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: 5 auto;
+    box-sizing: 1 auto;
 }
 
 .clearfix:before,
@@ -70,7 +70,7 @@ a:focus {
 }
 
 .demo-4 a {
-    color: #43939d;
+    /* color: #43939d */
 }
 
 .demo-4 a:hover,

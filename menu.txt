@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="../commonmenu/sticky_menu.css">
+
+
+        <div class="sticky-menu">
+    <a id="sticky-menu-link" href="your-link-here" class="button"></a>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const linkElement = document.getElementById('sticky-menu-link');
+        const currentPage = window.location.pathname;
+        const targetLink = currentPage.endsWith('FR.html') ? '../00menu/indexFR.html' : '../00menu/index.html';
+        linkElement.href = targetLink;
+    });
+</script>
+
