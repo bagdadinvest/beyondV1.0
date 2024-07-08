@@ -161,7 +161,7 @@ nav {
 .overlay-menu.open {
     opacity: 1;
     transform: translateY(0%);
-    padding: 4em;
+    padding: 2em;
 }
 
 .overlay-menu .main-menu {
