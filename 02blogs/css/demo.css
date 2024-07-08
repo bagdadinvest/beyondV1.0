@@ -15,7 +15,7 @@
 *:after,
 *:before {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    -moz-box-sizing: 120%;
     box-sizing: 1 auto;
 }
 
