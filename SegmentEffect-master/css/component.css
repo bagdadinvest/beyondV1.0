@@ -1,4 +1,9 @@
-.segmenter {
+.segmenter,
+.segmenter1,
+.segmenter2,
+.segmenter3,
+.segmenter4,
+.segmenter5 {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -6,7 +11,12 @@
     background-repeat: no-repeat;
 }
 
-.segmenter__image {
+.segmenter__image,
+.segmenter1__image,
+.segmenter2__image,
+.segmenter3__image,
+.segmenter4__image,
+.segmenter5__image {
     width: 100%;
     display: block;
     background-repeat: no-repeat;
@@ -16,7 +26,32 @@
 .segmenter__pieces,
 .segmenter__piece-wrap,
 .segmenter__piece-parallax,
-.segmenter__piece {
+.segmenter__piece,
+.segmenter1__background,
+.segmenter1__pieces,
+.segmenter1__piece-wrap,
+.segmenter1__piece-parallax,
+.segmenter1__piece,
+.segmenter2__background,
+.segmenter2__pieces,
+.segmenter2__piece-wrap,
+.segmenter2__piece-parallax,
+.segmenter2__piece,
+.segmenter3__background,
+.segmenter3__pieces,
+.segmenter3__piece-wrap,
+.segmenter3__piece-parallax,
+.segmenter3__piece,
+.segmenter4__background,
+.segmenter4__pieces,
+.segmenter4__piece-wrap,
+.segmenter4__piece-parallax,
+.segmenter4__piece,
+.segmenter5__background,
+.segmenter5__pieces,
+.segmenter5__piece-wrap,
+.segmenter5__piece-parallax,
+.segmenter5__piece {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -27,57 +62,166 @@
     background-repeat: no-repeat;
 }
 
-.segmenter__piece-parallax {
+.segmenter__piece-parallax,
+.segmenter1__piece-parallax,
+.segmenter2__piece-parallax,
+.segmenter3__piece-parallax,
+.segmenter4__piece-parallax,
+.segmenter5__piece-parallax {
     -webkit-transition: -webkit-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
 }
 
-.segmenter__pieces {
+.segmenter__pieces,
+.segmenter1__pieces,
+.segmenter2__pieces,
+.segmenter3__pieces,
+.segmenter4__pieces,
+.segmenter5__pieces {
     -webkit-perspective: 400px;
     perspective: 400px;
 }
 
 .segmenter__background,
-.segmenter__piece {
-    background-size: cover;
+.segmenter__piece,
+.segmenter1__background,
+.segmenter1__piece,
+.segmenter2__background,
+.segmenter2__piece,
+.segmenter3__background,
+.segmenter3__piece,
+.segmenter4__background,
+.segmenter4__piece,
+.segmenter5__background,
+.segmenter5__piece {
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 480px) {
-    .segmenter__background,
-    .segmenter__piece {
-        background-size: contain;
+/* Individual segmenter background images */
+.segmenter {
+    background-image: url('../img/0.jpg');
+}
 
-        /* Ensure the entire image is visible */
+.segmenter1 {
+    background-image: url('../img/1.jpg');
+}
+
+.segmenter2 {
+    background-image: url('../img/2.jpg');
+}
+
+.segmenter3 {
+    background-image: url('../img/3.jpg');
+}
+
+.segmenter4 {
+    background-image: url('../img/4.jpg');
+}
+
+.segmenter5 {
+    background-image: url('../img/5.jpg');
+}
+
+/* Media queries for responsive background images */
+@media only screen and (max-width: 480px) {
+    .segmenter {
+        background-image: url('../img/0xs.jpg');
+    }
+
+    .segmenter1 {
+        background-image: url('../img/1xs.jpg');
+    }
+
+    .segmenter2 {
+        background-image: url('../img/2xs.jpg');
+    }
+
+    .segmenter3 {
+        background-image: url('../img/3xs.jpg');
+    }
+
+    .segmenter4 {
+        background-image: url('../img/4xs.jpg');
+    }
+
+    .segmenter5 {
+        background-image: url('../img/5xs.jpg');
+    }
+
+    .segmenter__background,
+    .segmenter__piece,
+    .segmenter1__background,
+    .segmenter1__piece,
+    .segmenter2__background,
+    .segmenter2__piece,
+    .segmenter3__background,
+    .segmenter3__piece,
+    .segmenter4__background,
+    .segmenter4__piece,
+    .segmenter5__background,
+    .segmenter5__piece {
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        background-repeat: no-repeat;
     }
 }
 
-.segmenter__shadow {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .segmenter {
+        background-image: url('../img/0.jpg');
+    }
+
+    .segmenter1 {
+        background-image: url('../img/1.jpg');
+    }
+
+    .segmenter2 {
+        background-image: url('../img/2.jpg');
+    }
+
+    .segmenter3 {
+        background-image: url('../img/3.jpg');
+    }
+
+    .segmenter4 {
+        background-image: url('../img/4.jpg');
+    }
+
+    .segmenter5 {
+        background-image: url('../img/5.jpg');
+    }
+}
+
+.segmenter__shadow,
+.segmenter1__shadow,
+.segmenter2__shadow,
+.segmenter3__shadow,
+.segmenter4__shadow,
+.segmenter5__shadow {
     position: absolute;
     opacity: 0;
     box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
 }
 
 /* Individual shadow styles */
-.demo-1 .segmenter__shadow {
+.demo-1 .segmenter__shadow,
+.demo-1 .segmenter1__shadow {
     box-shadow: 0px 20px 50px rgba(18, 20, 28, 0.61);
 }
 
-.demo-2 .segmenter__shadow {
+.demo-2 .segmenter2__shadow {
     box-shadow: 10px 10px 30px rgba(43, 27, 19, 0.95);
 }
 
-.demo-3 .segmenter__shadow {
+.demo-3 .segmenter3__shadow {
     border: 7px solid rgba(255,255,255,0.7);
     box-shadow: none;
 }
 
-.demo-3 .segmenter__shadow::before {
+.demo-3 .segmenter3__shadow::before {
     content: '';
     position: absolute;
     top: -20px;
@@ -87,14 +231,10 @@
     box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.7);
 }
 
-.demo-4 .segmenter__shadow {
+.demo-4 .segmenter4__shadow {
     box-shadow: 8px 8px 30px rgba(15, 32, 38, 0.35);
 }
 
-.demo-5 .segmenter__shadow {
+.demo-5 .segmenter5__shadow {
     box-shadow: 0px 18px 29px rgba(4, 19, 22, 0.65);
-}
-
-.demo-6 .segmenter__shadow {
-    box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75);
 }
